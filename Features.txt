@@ -1,0 +1,6 @@
+APLICATIVO UTILIZANDO
+
+- Node e Nodemon
+- Express e Mysql2
+- Sequelize e Mysql
+- Handle-Bars e Body-parser

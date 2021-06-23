@@ -1,0 +1,22 @@
+<div class="col-10 text-center mt-5 text-light">
+	<h1 class="display-3"> Comentários </h1>	
+</div>
+
+{{#each ViewComentario}}
+<div class="row justify-content-center mt-2">
+	<div class="col-6">
+		<div class="card rounded shadow-lg">
+			<div class="card-body m-3">
+				<h3 class="card-title"> {{dataValues.titulo}} <a href="/deletar/{{dataValues.id}}"> <button class="btn"> <i class="fas fa-times text-danger"></i> </button> </a> </h3>
+				<footer class="blockquote-footer mt-1"> autor: <cite title="Source Title"> {{dataValues.autor}} </cite></footer>
+				<footer class="blockquote-footer mt-1"> hora: <cite title="Source Title"> {{dataValues.createdAt}} </cite></footer>
+				<hr>
+				<p class="card-text"> {{dataValues.texto}} </p>
+				<small> {{dataValues.curtidas}} </small>
+			</div>
+		</div>
+	</div>
+</div>
+{{/each}}
+	
+
